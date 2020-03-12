@@ -27,6 +27,11 @@ public class SpringitApplication {
 			link.addComment(comment);
 
 			System.out.println("We jsut inserted a link into and comment");
+			System.out.println("=================================================");
+
+//			Link firstLink = linkRepository.findByTitle("Getting Started with Spring Boot 2");
+//			System.out.println(firstLink.getTitle());
+
 		};
 	}
 
