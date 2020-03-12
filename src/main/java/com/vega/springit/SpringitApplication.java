@@ -16,7 +16,7 @@ public class SpringitApplication {
 		SpringApplication.run(SpringitApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 	CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
 		return args -> {
 			Link link = new Link("Getting Started with Spring Boot 2", "https://therealdavega.com/spring-boot-2");
@@ -26,7 +26,7 @@ public class SpringitApplication {
 			commentRepository.save(comment);
 			link.addComment(comment);
 
-			System.out.println("We jsut inserted a link into and comment");
+			System.out.println("We just inserted a link into and comment");
 			System.out.println("=================================================");
 
 //			Link firstLink = linkRepository.findByTitle("Getting Started with Spring Boot 2");
