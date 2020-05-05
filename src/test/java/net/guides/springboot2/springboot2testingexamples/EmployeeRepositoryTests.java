@@ -23,15 +23,15 @@ public class EmployeeRepositoryTests {
     private TestEntityManager entityManager;
 
     // example 1
-/*    @Test
-    public void testSaveEmployee() {
+    @Test
+    public void testSaveEmployeeExample1() {
         Employee employee = new Employee("admin", "admin", "admin@gmail.com");
         employeeRepository.save(employee);
         Employee employee2 = employeeRepository.findByFirstName("admin");
         assertNotNull(employee);
         assertEquals(employee2.getFirstName(), employee.getFirstName());
         assertEquals(employee2.getLastName(), employee.getLastName());
-    }   */
+    }
 
     // example 2, Include entityManager.
     @Test
